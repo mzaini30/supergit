@@ -4,7 +4,8 @@
   "description": "Running git push to multiple repositories automatically",
   "scripts": {
     "s": "git status",
-    "c": "dist/commit.js"
+    "c": "dist/commit.js",
+    "p": "dist/push.js"
   },
   "repository": {
     "type": "git",
