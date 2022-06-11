@@ -11,8 +11,8 @@ async function main(){
 	let data = readFileSync(storage).toString()
 	data = data.split('\n').filter(x => x) // become array
 	for (let x of data){
-		const {stdout: push} = await execa('git', ['push'], {cwd: x})
-		console.log(push)
+		const {stdout} = await execa('git', ['push'], {cwd: x})
+		console.log(stdout)
 	}
 }
 main()
