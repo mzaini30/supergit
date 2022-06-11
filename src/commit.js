@@ -10,7 +10,7 @@ async function main(){
 	const {stdout: add} = await execa('git', ['add', '.'])
 	const message = question('Commit message: ')
 	try {
-		const {stdout: commit} = await execa('git', ['commit', '-m', `"${message}"`])
+		const {stdout: commit} = await execa('git', ['commit', '-m', `${message}`])
 		console.log(commit)
 		if (!existsSync(storage)){
 			writeFileSync(storage, '')
