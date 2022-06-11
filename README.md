@@ -19,3 +19,7 @@ npm i -g supergit
 ## How is it different from normal Git?
 
 So, we can run `c` command in any repository. Then, by typing the command `p`, it will automatically run `git push` on all the committed repositories.
+
+## Notes
+
+Supports Linux only
