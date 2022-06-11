@@ -9,8 +9,8 @@ const storage = '/tmp/.supergit.txt'
 async function main(){
 	const {stdout: add} = await execa('git', ['add', '.'])
 	const message = question('Commit message: ')
-	const {stdout: commit} = await execa('git', ['commit', '-m', `"${message}"`])
-	if (commit){
+	try {
+		const {stdout: commit} = await execa('git', ['commit', '-m', `"${message}"`])
 		console.log(commit)
 		if (!existsSync(storage)){
 			writeFileSync(storage, '')
@@ -21,6 +21,8 @@ async function main(){
 		data = [...new Set(data)]
 		data = data.join('\n')
 		writeFileSync(storage, data)
+	} catch(error){
+		console.log(error)
 	}
 }
 main()
