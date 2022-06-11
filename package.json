@@ -1,0 +1,28 @@
+{
+  "name": "supergit",
+  "version": "0.0.1",
+  "description": "Running git push to multiple repositories automatically",
+  "scripts": {
+    "s": "git status",
+    "c": "dist/commit.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mzaini30/supergit.git"
+  },
+  "keywords": [
+    "git",
+    "automation"
+  ],
+  "author": "Zen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mzaini30/supergit/issues"
+  },
+  "type": "module",
+  "homepage": "https://github.com/mzaini30/supergit#readme",
+  "dependencies": {
+    "execa": "^6.1.0",
+    "readline-sync": "^1.4.10"
+  }
+}
