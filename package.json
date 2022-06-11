@@ -1,6 +1,6 @@
 {
   "name": "supergit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Running git push to multiple repositories automatically",
   "bin": {
     "s": "dist/status.mjs",
@@ -9,7 +9,8 @@
   },
   "scripts": {
     "build": "unbuild",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "release": "bumpp --push --tag --commit"
   },
   "repository": {
     "type": "git",
@@ -27,9 +28,10 @@
   "type": "module",
   "homepage": "https://github.com/mzaini30/supergit#readme",
   "devDependencies": {
-    "fast-glob": "^3.2.11",
-    "unbuild": "^0.7.4",
+    "bumpp": "^7.1.1",
     "execa": "^6.1.0",
-    "readline-sync": "^1.4.10"
+    "fast-glob": "^3.2.11",
+    "readline-sync": "^1.4.10",
+    "unbuild": "^0.7.4"
   }
 }
