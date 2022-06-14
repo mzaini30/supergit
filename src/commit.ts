@@ -3,9 +3,9 @@ import { question } from "readline-sync";
 import { execa } from "execa";
 import { existsSync, readFileSync, writeFileSync } from "fs";
 import { cwd } from "process";
-import getStorage from './getStorage'
+import getStorage from "./getStorage";
 
-const storage = getStorage()
+const storage = getStorage();
 
 async function main() {
   execa("git", ["add", "."]);
