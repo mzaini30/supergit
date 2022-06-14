@@ -1,13 +1,15 @@
 {
   "name": "supergit",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Running git push to multiple repositories automatically",
   "bin": {
     "s": "dist/status.mjs",
     "c": "dist/commit.mjs",
     "p": "dist/push.mjs"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "unbuild",
     "prepublishOnly": "npm run build",
