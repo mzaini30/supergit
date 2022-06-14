@@ -22,4 +22,4 @@ So, we can run `c` command in any repository. Then, by typing the command `p`, i
 
 ## Notes
 
-Supports Linux only
+Supports Linux and Android (Termux)
