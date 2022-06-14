@@ -14,7 +14,7 @@
     "build": "unbuild",
     "prepublishOnly": "npm run build",
     "release": "bumpp --tag --commit --push",
-    "prettier": "prettier --write \"**/*.ts\""
+    "prettier": "prettier --write 'src/**/*.ts'"
   },
   "simple-git-hooks": {
     "pre-push": "npm run prettier"
