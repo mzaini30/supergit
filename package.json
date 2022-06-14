@@ -1,6 +1,6 @@
 {
   "name": "supergit",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Running git push to multiple repositories automatically",
   "bin": {
     "s": "dist/status.mjs",
@@ -10,7 +10,7 @@
   "scripts": {
     "build": "unbuild",
     "prepublishOnly": "npm run build",
-    "release": "bumpp --push --tag --commit"
+    "release": "bumpp --tag --commit"
   },
   "repository": {
     "type": "git",
