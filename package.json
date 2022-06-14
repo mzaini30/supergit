@@ -12,6 +12,9 @@
     "prepublishOnly": "npm run build",
     "release": "bumpp --tag --commit"
   },
+  "simple-git-hooks": {
+    "pre-commit": "echo hello"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mzaini30/supergit.git"
