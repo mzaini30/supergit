@@ -9,7 +9,7 @@ async function main() {
     writeFileSync(storage, "");
   }
   let data = readFileSync(storage).toString();
-  let dataArray: string[]
+  let dataArray: string[];
   dataArray = data.split("\n").filter((x) => x);
   for (let x of dataArray) {
     const push = await execa("git", ["push"], { cwd: x });

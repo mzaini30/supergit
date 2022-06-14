@@ -20,7 +20,7 @@ async function main() {
       writeFileSync(storage, "");
     }
     let data = readFileSync(storage).toString();
-    let dataArray: string[]
+    let dataArray: string[];
     dataArray = data.split("\n").filter((x) => x);
     dataArray.push(cwd());
     dataArray = [...new Set(dataArray)];

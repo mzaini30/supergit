@@ -14,7 +14,7 @@
     "prettier": "prettier --write \"**/*.ts\""
   },
   "simple-git-hooks": {
-    "pre-commit": "npm run prettier"
+    "pre-push": "npm run prettier"
   },
   "repository": {
     "type": "git",
