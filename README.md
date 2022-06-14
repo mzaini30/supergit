@@ -1,6 +1,6 @@
 # SuperGit
 
-Running git push to multiple repositories automatically
+Running git push to multiple repositories automatically.
 
 ## Install
 
