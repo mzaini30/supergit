@@ -1,6 +1,6 @@
 {
   "name": "supergit",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Running git push to multiple repositories automatically",
   "bin": {
     "s": "dist/status.mjs",
