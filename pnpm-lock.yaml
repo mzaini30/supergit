@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/node': ^17.0.42
+  '@types/readline-sync': ^1.4.4
   bumpp: ^7.1.1
   execa: ^6.1.0
   fast-glob: ^3.2.11
@@ -12,6 +13,7 @@ specifiers:
 
 devDependencies:
   '@types/node': 17.0.42
+  '@types/readline-sync': 1.4.4
   bumpp: 7.1.1
   execa: 6.1.0
   fast-glob: 3.2.11
@@ -381,6 +383,10 @@ packages:
 
   /@types/node/17.0.42:
     resolution: {integrity: sha512-Q5BPGyGKcvQgAMbsr7qEGN/kIPN6zZecYYABeTDBizOsau+2NMdSVTar9UQw21A2+JyA2KRNDYaYrPB0Rpk2oQ==}
+    dev: true
+
+  /@types/readline-sync/1.4.4:
+    resolution: {integrity: sha512-cFjVIoiamX7U6zkO2VPvXyTxbFDdiRo902IarJuPVxBhpDnXhwSaVE86ip+SCuyWBbEioKCkT4C88RNTxBM1Dw==}
     dev: true
 
   /@types/resolve/1.17.1:

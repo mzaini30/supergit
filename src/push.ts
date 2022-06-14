@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 import { execa } from "execa";
 import { existsSync, readFileSync, writeFileSync } from "fs";
+import getStorage from './getStorage'
 
-const storage = "/tmp/.supergit.txt";
+const storage = getStorage()
 
 async function main() {
   if (!existsSync(storage)) {

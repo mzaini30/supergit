@@ -10,7 +10,7 @@
   "scripts": {
     "build": "unbuild",
     "prepublishOnly": "npm run build",
-    "release": "bumpp --tag --commit",
+    "release": "bumpp --tag --commit --push",
     "prettier": "prettier --write \"**/*.ts\""
   },
   "simple-git-hooks": {
@@ -33,6 +33,7 @@
   "homepage": "https://github.com/mzaini30/supergit#readme",
   "devDependencies": {
     "@types/node": "^17.0.42",
+    "@types/readline-sync": "^1.4.4",
     "bumpp": "^7.1.1",
     "execa": "^6.1.0",
     "fast-glob": "^3.2.11",
