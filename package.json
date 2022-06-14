@@ -10,10 +10,11 @@
   "scripts": {
     "build": "unbuild",
     "prepublishOnly": "npm run build",
-    "release": "bumpp --tag --commit"
+    "release": "bumpp --tag --commit",
+    "prettier": "prettier --write \"**/*.ts\""
   },
   "simple-git-hooks": {
-    "pre-commit": "echo hello"
+    "pre-commit": "npm run prettier"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "bumpp": "^7.1.1",
     "execa": "^6.1.0",
     "fast-glob": "^3.2.11",
+    "prettier": "^2.6.2",
     "readline-sync": "^1.4.10",
     "unbuild": "^0.7.4"
   }
