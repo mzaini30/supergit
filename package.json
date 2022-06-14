@@ -7,6 +7,7 @@
     "c": "dist/commit.mjs",
     "p": "dist/push.mjs"
   },
+  "files": ["dist"],
   "scripts": {
     "build": "unbuild",
     "prepublishOnly": "npm run build",
