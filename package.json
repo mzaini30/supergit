@@ -14,10 +14,10 @@
     "build": "unbuild",
     "prepublishOnly": "npm run build",
     "release": "bumpp --tag --commit --push",
-    "prettier": "prettier --write 'src/**/*.ts'"
+    "prettier": "prettier --write src/**/*.ts"
   },
   "simple-git-hooks": {
-    "pre-push": "npm run prettier"
+    "pre-commit": "npm run prettier"
   },
   "repository": {
     "type": "git",
